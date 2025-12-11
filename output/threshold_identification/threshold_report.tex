@@ -1,0 +1,496 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  10pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Threshold Identification Report},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Threshold Identification Report}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Cutpoints for mestringsnivå classification (2014-2021)}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\section{Overview}\label{overview}
+
+This report documents the cutpoints (thresholds) used to map skalapoeng
+(scale scores) to mestringsnivå (mastery levels) in the Norwegian
+national test data for the period 2014-2021.
+
+\section{Methodology}\label{methodology}
+
+\subsection{Threshold Setting Process (per Udir
+documentation)}\label{threshold-setting-process-per-udir-documentation}
+
+According to Udir, thresholds were set in the first test year to achieve
+the following percentile distributions:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Grade 5}: 25\% -- 50\% -- 25\% (Levels 1, 2, 3)
+\item
+  \textbf{Grade 8}: 10\% -- 20\% -- 40\% -- 20\% -- 10\% (Levels 1, 2,
+  3, 4, 5)
+\end{itemize}
+
+\begin{longtable}[t]{cccl}
+\toprule
+Grade & Threshold & Lower → Upper & Target Pctl\\
+\midrule
+5 & 1 & 1 → 2 & 25th\\
+5 & 2 & 2 → 3 & 75th\\
+\midrule\\
+8 & 1 & 1 → 2 & 10th\\
+8 & 2 & 2 → 3 & 30th\\
+8 & 3 & 3 → 4 & 70th\\
+\addlinespace
+8 & 4 & 4 → 5 & 90th\\
+\bottomrule
+\end{longtable}
+
+\subsection{Empirical Identification}\label{empirical-identification}
+
+For each year × subject × grade × threshold, we identify:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{lower\_max}: Maximum score among students at the lower level
+\item
+  \textbf{upper\_min}: Minimum score among students at the higher level
+\end{enumerate}
+
+The classification rule is:
+\texttt{score\ \textgreater{}=\ threshold\ →\ higher\ level}
+
+With 3-decimal precision scores, we can identify thresholds exactly.
+
+\newpage
+
+\section{Percentile Analysis: First Year
+Thresholds}\label{percentile-analysis-first-year-thresholds}
+
+These tables compare target vs actual percentiles for the first year
+(2014).
+
+\subsection{Grade 5}\label{grade-5}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 25\% & 42.55 & 42.5 & 24.8\%\\
+2 & 3 & 75\% & 56.51 & 56.5 & 75.0\%\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 25\% & 42.61 & 42.5 & 24.6\%\\
+2 & 3 & 75\% & 56.83 & 56.5 & 74.1\%\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 25\% & 43.06 & 42.5 & 23.2\%\\
+2 & 3 & 75\% & 56.87 & 56.5 & 73.8\%\\
+\bottomrule
+\end{longtable}
+
+\subsection{Grade 8}\label{grade-8}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk-1}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 10\% & 36.89 & 36.5 & 9.2\%\\
+2 & 3 & 30\% & 44.00 & 43.5 & 28.4\%\\
+3 & 4 & 70\% & 55.96 & 55.5 & 68.6\%\\
+4 & 5 & 90\% & 63.24 & 62.5 & 88.5\%\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning-1}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 10\% & 36.88 & 37 & 10.3\%\\
+2 & 3 & 30\% & 44.42 & 45 & 32.0\%\\
+3 & 4 & 70\% & 55.31 & 55 & 68.9\%\\
+4 & 5 & 90\% & 63.11 & 63 & 89.8\%\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing-1}
+
+\begin{longtable}[t]{cccccc}
+\toprule
+Lower nivå & Upper nivå & Target Pctl & Score at Target & Actual Cutpoint & Actual Pctl\\
+\midrule
+1 & 2 & 10\% & 37.23 & 36.5 & 8.7\%\\
+2 & 3 & 30\% & 44.54 & 43.5 & 26.5\%\\
+3 & 4 & 70\% & 55.34 & 54.5 & 67.2\%\\
+4 & 5 & 90\% & 63.13 & 62.5 & 88.9\%\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\section{Cutpoint Tables by Subject}\label{cutpoint-tables-by-subject}
+
+\subsection{Grade 5}\label{grade-5-1}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk-2}
+
+\begin{longtable}[t]{ccc}
+\toprule
+Lower nivå & Upper nivå & 2014-2021\\
+\midrule
+1 & 2 & 42.5\\
+2 & 3 & 56.5\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning-2}
+
+\begin{longtable}[t]{ccc}
+\toprule
+Lower nivå & Upper nivå & 2014-2021\\
+\midrule
+1 & 2 & 42.5\\
+2 & 3 & 56.5\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing-2}
+
+\begin{longtable}[t]{cclc}
+\toprule
+Lower nivå & Upper nivå & Years & Cutpoint\\
+\midrule
+1 & 2 & 2014-2021 & 42.5\\
+2 & 3 & 2014, 2015 & 56.5\\
+2 & 3 & 2016-2021 & 57.5\\
+\bottomrule
+\end{longtable}
+
+\subsection{Grade 8}\label{grade-8-1}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk-3}
+
+\begin{longtable}[t]{ccc}
+\toprule
+Lower nivå & Upper nivå & 2014-2021\\
+\midrule
+1 & 2 & 36.5\\
+2 & 3 & 43.5\\
+3 & 4 & 55.5\\
+4 & 5 & 62.5\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning-3}
+
+\begin{longtable}[t]{cclc}
+\toprule
+Lower nivå & Upper nivå & Years & Cutpoint\\
+\midrule
+1 & 2 & 2014 & 37.0\\
+1 & 2 & 2015-2021 & 36.5\\
+2 & 3 & 2014 & 45.0\\
+2 & 3 & 2015-2021 & 44.5\\
+3 & 4 & 2014 & 55.0\\
+\addlinespace
+3 & 4 & 2015-2021 & 54.5\\
+4 & 5 & 2014 & 63.0\\
+4 & 5 & 2015-2021 & 62.5\\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing-3}
+
+\begin{longtable}[t]{cclc}
+\toprule
+Lower nivå & Upper nivå & Years & Cutpoint\\
+\midrule
+1 & 2 & 2014, 2015 & 36.5\\
+1 & 2 & 2016-2021 & 37.5\\
+2 & 3 & 2014, 2016-2021 & 43.5\\
+2 & 3 & 2015 & 44.5\\
+3 & 4 & 2014-2021 & 54.5\\
+\addlinespace
+4 & 5 & 2014-2021 & 62.5\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\section{Detailed Year-by-Year
+Thresholds}\label{detailed-year-by-year-thresholds}
+
+For reference, exact upper\_min values. Small variations (e.g., 42.500
+vs 42.501) reflect measurement precision, not threshold differences.
+
+\subsection{Grade 5}\label{grade-5-2}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk-4}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 42.501 & 42.500 & 42.500 & 42.500 & 42.500 & 42.500 & 42.500 & 42.500\\
+2 & 3 & 56.500 & 56.500 & 56.500 & 56.500 & 56.500 & 56.500 & 56.500 & 56.500\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning-4}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 42.500 & 42.500 & 42.500 & 42.500 & 42.501 & 42.500 & 42.500 & 42.500\\
+2 & 3 & 56.500 & 56.500 & 56.502 & 56.500 & 56.501 & 56.500 & 56.500 & 56.500\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing-4}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 42.500 & 42.500 & 42.501 & 42.500 & 42.500 & 42.500 & 42.501 & 42.500\\
+2 & 3 & 56.500 & 56.500 & 57.500 & 57.500 & 57.500 & 57.500 & 57.500 & 57.501\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\subsection{Grade 8}\label{grade-8-2}
+
+\subsubsection{English (Engelsk)}\label{english-engelsk-5}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 36.500 & 36.500 & 36.500 & 36.500 & 36.500 & 36.501 & 36.500 & 36.500\\
+2 & 3 & 43.500 & 43.500 & 43.500 & 43.501 & 43.500 & 43.500 & 43.500 & 43.500\\
+3 & 4 & 55.500 & 55.500 & 55.500 & 55.500 & 55.500 & 55.500 & 55.500 & 55.500\\
+4 & 5 & 62.501 & 62.501 & 62.500 & 62.501 & 62.500 & 62.500 & 62.500 & 62.501\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\subsubsection{Mathematics (Regning)}\label{mathematics-regning-5}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 37.000 & 36.500 & 36.500 & 36.500 & 36.500 & 36.501 & 36.500 & 36.501\\
+2 & 3 & 45.000 & 44.500 & 44.500 & 44.500 & 44.501 & 44.500 & 44.500 & 44.500\\
+3 & 4 & 55.000 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500 & 54.501\\
+4 & 5 & 63.000 & 62.500 & 62.500 & 62.501 & 62.501 & 62.500 & 62.501 & 62.501\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\subsubsection{Reading (Lesing)}\label{reading-lesing-5}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{ccrrrrrrrr}
+\toprule
+Lower & Upper & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021\\
+\midrule
+1 & 2 & 36.500 & 36.503 & 37.500 & 37.500 & 37.500 & 37.500 & 37.501 & 37.500\\
+2 & 3 & 43.500 & 44.500 & 43.500 & 43.500 & 43.500 & 43.500 & 43.501 & 43.500\\
+3 & 4 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500 & 54.500\\
+4 & 5 & 62.500 & 62.501 & 62.501 & 62.503 & 62.501 & 62.500 & 62.500 & 62.500\\
+\bottomrule
+\end{longtable}
+\endgroup{}
+
+\newpage
+
+\section{Key Findings}\label{key-findings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Score precision}: Skalapoeng values have 3-decimal precision
+\item
+  \textbf{Clean separation}: All level boundaries have positive gaps (no
+  misclassifications)
+\item
+  \textbf{Threshold format}: Most thresholds are at X.5 (e.g., 42.5,
+  56.5)
+\item
+  \textbf{Notable threshold changes}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{NOR Grade 5 Level 2→3}: Changed from 56.5 to 57.5 starting
+    2016
+  \item
+    \textbf{NOR Grade 8 Level 1→2}: Changed from 36.5 to 37.5 starting
+    2016
+  \item
+    \textbf{NOR Grade 8 Level 2→3}: Was 44.5 in 2015, otherwise 43.5
+  \item
+    \textbf{MATH Grade 8 in 2014}: Used integer thresholds (37, 45, 55,
+    63)
+  \end{itemize}
+\item
+  \textbf{Percentile alignment}: Actual thresholds generally align well
+  with target percentiles
+\end{enumerate}
+
+\section{Interpretation}\label{interpretation}
+
+\subsection{How to Use These
+Thresholds}\label{how-to-use-these-thresholds}
+
+\begin{verbatim}
+For Grade 5 (3 levels):
+  Level 1: score < threshold_1
+  Level 2: threshold_1 <= score < threshold_2
+  Level 3: score >= threshold_2
+
+For Grade 8 (5 levels):
+  Level 1: score < threshold_1
+  Level 2: threshold_1 <= score < threshold_2
+  Level 3: threshold_2 <= score < threshold_3
+  Level 4: threshold_3 <= score < threshold_4
+  Level 5: score >= threshold_4
+\end{verbatim}
+
+\subsection{Comparison to Published Udir
+Thresholds}\label{comparison-to-published-udir-thresholds}
+
+The published Udir thresholds are integers (e.g., 43, 57). The empirical
+thresholds are typically 0.5 below the published values (e.g., 42.5,
+56.5). This is because Udir rounds up for communication, while actual
+classification uses the precise decimal cutpoint.
+
+\end{document}

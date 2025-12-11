@@ -54,7 +54,8 @@ cat("\n2. Preparing data for analysis...\n")
 # trinn -> grade_level
 # skalapoeng -> score (for existing functions)
 
-data <- copy(data_raw)
+# Exclude 2022 - different regime with integer scores only
+data <- copy(data_raw[year >= 2014 & year <= 2021])
 
 # Map subject codes
 data[, subject := fcase(

@@ -12,9 +12,10 @@ library(ggplot2)
 # Source config
 source(here("R", "config.R"), encoding = "UTF-8")
 
-# Load data to get realistic score ranges
+# Load data to get realistic score ranges (exclude 2022 - different regime)
 cat("Loading data for score ranges...\n")
 data_raw <- as.data.table(read_dta(here("data", "npole.dta")))
+data_raw <- data_raw[year >= 2014 & year <= 2021]
 
 # Map columns
 data_raw[, subject := fcase(

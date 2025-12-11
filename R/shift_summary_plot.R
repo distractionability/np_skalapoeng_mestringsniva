@@ -16,8 +16,9 @@ source(here("R", "mastery_levels.R"), encoding = "UTF-8")
 
 cat("Loading and processing data...\n")
 
-# Load data
+# Load data (exclude 2022 - different regime with integer scores)
 data_raw <- as.data.table(read_dta(here("data", "npole.dta")))
+data_raw <- data_raw[year >= 2014 & year <= 2021]
 
 # Prepare data
 data <- copy(data_raw)

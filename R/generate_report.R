@@ -27,15 +27,9 @@ create_transformation_plot <- function(subj, grade, yr) {
   slope <- params$sd_new / params$sd_old
   intercept <- params$mean_new - slope * params$mean_old
 
-  # Get cutoffs for this grade
-  cutoffs <- if (grade == 5) {
-    if (subj == "ENG") c(42, 57)
-    else if (subj == "MATH") c(43, 56)
-    else c(42, 55)  # NOR
-  } else {  # Grade 8
-    if (subj == "ENG") c(37, 44, 55, 62)
-    else c(37, 44, 54, 62)  # MATH and NOR
-  }
+  # Get cutoffs for this grade (from centralized config)
+  all_cutoffs <- get_cutoffs(subj, grade)
+  cutoffs <- all_cutoffs[is.finite(all_cutoffs)]  # Remove -Inf and Inf for plotting
 
   # Build rectangles based on number of levels
   n_levels <- length(cutoffs) + 1
@@ -116,8 +110,9 @@ create_transformation_plot <- function(subj, grade, yr) {
 
 cat("Loading and processing data...\n")
 
-# Load data
+# Load data (exclude 2022 - different regime with integer scores)
 data_raw <- as.data.table(read_dta(here("data", "npole.dta")))
+data_raw <- data_raw[year >= 2014 & year <= 2021]
 
 # Prepare data
 data <- copy(data_raw)

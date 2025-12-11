@@ -36,14 +36,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,557 |    478 |      0 | 13,035 |
-| Level 2 |      0 | 30,220 |      0 | 30,220 |
-| Level 3 |      0 |    327 | 13,176 | 13,503 |
+| Level 1 | 13,623 |    464 |      0 | 14,087 |
+| Level 2 |      0 | 28,470 |      0 | 28,470 |
+| Level 3 |      0 |    293 | 13,908 | 14,201 |
 
 **Total test-takers:** 56,758
-- **Shifted level:** 805 (1.42%)
-- **Shifted up:** 478 (0.84%)
-- **Shifted down:** 327 (0.58%)
+- **Shifted level:** 757 (1.33%)
+- **Shifted up:** 464 (0.82%)
+- **Shifted down:** 293 (0.52%)
 
 ### 2015
 
@@ -51,14 +51,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,316 |      0 |      0 | 13,316 |
-| Level 2 |  3,491 | 26,829 |      0 | 30,320 |
-| Level 3 |      0 |  1,449 | 11,547 | 12,996 |
+| Level 1 | 14,478 |      0 |      0 | 14,478 |
+| Level 2 |  3,514 | 24,947 |      0 | 28,461 |
+| Level 3 |      0 |  1,500 | 12,193 | 13,693 |
 
 **Total test-takers:** 56,632
-- **Shifted level:** 4,940 (8.72%)
+- **Shifted level:** 5,014 (8.85%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 4,940 (8.72%)
+- **Shifted down:** 5,014 (8.85%)
 
 ### 2016
 
@@ -66,14 +66,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,038 |      0 |      0 | 13,038 |
-| Level 2 |  1,711 | 30,050 |      0 | 31,761 |
-| Level 3 |      0 |    273 | 13,164 | 13,437 |
+| Level 1 | 14,235 |      0 |      0 | 14,235 |
+| Level 2 |  1,678 | 28,218 |      0 | 29,896 |
+| Level 3 |      0 |    321 | 13,784 | 14,105 |
 
 **Total test-takers:** 58,236
-- **Shifted level:** 1,984 (3.41%)
+- **Shifted level:** 1,999 (3.43%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 1,984 (3.41%)
+- **Shifted down:** 1,999 (3.43%)
 
 ### 2017
 
@@ -81,14 +81,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,363 |      0 |      0 | 12,363 |
-| Level 2 |  1,591 | 28,651 |  1,389 | 31,631 |
-| Level 3 |      0 |      0 | 14,087 | 14,087 |
+| Level 1 | 13,447 |      0 |      0 | 13,447 |
+| Level 2 |  1,548 | 26,923 |  1,349 | 29,820 |
+| Level 3 |      0 |      0 | 14,814 | 14,814 |
 
 **Total test-takers:** 58,081
-- **Shifted level:** 2,980 (5.13%)
-- **Shifted up:** 1,389 (2.39%)
-- **Shifted down:** 1,591 (2.74%)
+- **Shifted level:** 2,897 (4.99%)
+- **Shifted up:** 1,349 (2.32%)
+- **Shifted down:** 1,548 (2.67%)
 
 ### 2018
 
@@ -96,14 +96,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,764 |      0 |      0 | 12,764 |
-| Level 2 |    429 | 27,990 |  3,662 | 32,081 |
-| Level 3 |      0 |      0 | 14,958 | 14,958 |
+| Level 1 | 13,946 |      0 |      0 | 13,946 |
+| Level 2 |    241 | 26,338 |  3,538 | 30,117 |
+| Level 3 |      0 |      0 | 15,740 | 15,740 |
 
 **Total test-takers:** 59,803
-- **Shifted level:** 4,091 (6.84%)
-- **Shifted up:** 3,662 (6.12%)
-- **Shifted down:** 429 (0.72%)
+- **Shifted level:** 3,779 (6.32%)
+- **Shifted up:** 3,538 (5.92%)
+- **Shifted down:** 241 (0.4%)
 
 ### 2019
 
@@ -111,14 +111,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,600 |      0 |      0 | 13,600 |
-| Level 2 |  4,073 | 25,348 |  2,539 | 31,960 |
-| Level 3 |      0 |      0 | 15,166 | 15,166 |
+| Level 1 | 14,988 |      0 |      0 | 14,988 |
+| Level 2 |  3,803 | 23,594 |  2,415 | 29,812 |
+| Level 3 |      0 |      0 | 15,926 | 15,926 |
 
 **Total test-takers:** 60,726
-- **Shifted level:** 6,612 (10.89%)
-- **Shifted up:** 2,539 (4.18%)
-- **Shifted down:** 4,073 (6.71%)
+- **Shifted level:** 6,218 (10.24%)
+- **Shifted up:** 2,415 (3.98%)
+- **Shifted down:** 3,803 (6.26%)
 
 ### 2020
 
@@ -126,14 +126,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,679 |      0 |      0 | 13,679 |
-| Level 2 |  2,583 | 24,614 |  3,357 | 30,554 |
-| Level 3 |      0 |      0 | 15,769 | 15,769 |
+| Level 1 | 14,793 |      0 |      0 | 14,793 |
+| Level 2 |  2,401 | 23,019 |  3,252 | 28,672 |
+| Level 3 |      0 |      0 | 16,537 | 16,537 |
 
 **Total test-takers:** 60,002
-- **Shifted level:** 5,940 (9.9%)
-- **Shifted up:** 3,357 (5.59%)
-- **Shifted down:** 2,583 (4.3%)
+- **Shifted level:** 5,653 (9.42%)
+- **Shifted up:** 3,252 (5.42%)
+- **Shifted down:** 2,401 (4%)
 
 ### 2021
 
@@ -141,13 +141,13 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,940 |    527 |      0 | 13,467 |
-| Level 2 |      0 | 22,033 |  6,230 | 28,263 |
-| Level 3 |      0 |      0 | 16,515 | 16,515 |
+| Level 1 | 13,792 |    762 |      0 | 14,554 |
+| Level 2 |      0 | 20,275 |  6,099 | 26,374 |
+| Level 3 |      0 |      0 | 17,317 | 17,317 |
 
 **Total test-takers:** 58,245
-- **Shifted level:** 6,757 (11.6%)
-- **Shifted up:** 6,757 (11.6%)
+- **Shifted level:** 6,861 (11.78%)
+- **Shifted up:** 6,861 (11.78%)
 - **Shifted down:** 0 (0%)
 
 
@@ -168,16 +168,16 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 5,516 |   325 |     0 |     0 |     0 | 5,841 |
-| Level 2 |      0 | 11,112 |    234 |      0 |      0 | 11,346 |
-| Level 3 |      0 |      0 | 21,197 |      0 |      0 | 21,197 |
-| Level 4 |      0 |      0 |    242 | 11,435 |      0 | 11,677 |
-| Level 5 |     0 |     0 |     0 |   370 | 6,859 | 7,229 |
+| Level 1 | 4,959 |   313 |     0 |     0 |     0 | 5,272 |
+| Level 2 |      0 | 10,725 |    269 |      0 |      0 | 10,994 |
+| Level 3 |      0 |      0 | 23,020 |      0 |      0 | 23,020 |
+| Level 4 |      0 |      0 |    269 | 11,159 |      0 | 11,428 |
+| Level 5 |     0 |     0 |     0 |   332 | 6,244 | 6,576 |
 
 **Total test-takers:** 57,290
-- **Shifted level:** 1,171 (2.04%)
-- **Shifted up:** 559 (0.98%)
-- **Shifted down:** 612 (1.07%)
+- **Shifted level:** 1,183 (2.06%)
+- **Shifted up:** 582 (1.02%)
+- **Shifted down:** 601 (1.05%)
 
 ### 2015
 
@@ -185,15 +185,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,805 |   619 |     0 |     0 |     0 | 5,424 |
-| Level 2 |     0 | 9,732 | 1,320 |     0 |     0 | 11,052 |
-| Level 3 |      0 |      0 | 19,850 |  1,875 |      0 | 21,725 |
-| Level 4 |     0 |     0 |     0 | 9,603 | 1,526 | 11,129 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,826 | 6,826 |
+| Level 1 | 4,249 |   593 |     0 |     0 |     0 | 4,842 |
+| Level 2 |     0 | 9,409 | 1,299 |     0 |     0 | 10,708 |
+| Level 3 |      0 |      0 | 21,684 |  1,897 |      0 | 23,581 |
+| Level 4 |     0 |     0 |     0 | 9,323 | 1,462 | 10,785 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,240 | 6,240 |
 
 **Total test-takers:** 56,156
-- **Shifted level:** 5,340 (9.51%)
-- **Shifted up:** 5,340 (9.51%)
+- **Shifted level:** 5,251 (9.35%)
+- **Shifted up:** 5,251 (9.35%)
 - **Shifted down:** 0 (0%)
 
 ### 2016
@@ -202,15 +202,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,809 |   999 |     0 |     0 |     0 | 5,808 |
-| Level 2 |     0 | 8,887 | 1,762 |     0 |     0 | 10,649 |
-| Level 3 |      0 |      0 | 20,842 |  1,997 |      0 | 22,839 |
-| Level 4 |      0 |      0 |      0 | 10,421 |  1,457 | 11,878 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,879 | 6,879 |
+| Level 1 | 4,314 |   941 |     0 |     0 |     0 | 5,255 |
+| Level 2 |     0 | 8,579 | 1,674 |     0 |     0 | 10,253 |
+| Level 3 |      0 |      0 | 22,784 |  1,975 |      0 | 24,759 |
+| Level 4 |      0 |      0 |      0 | 10,149 |  1,367 | 11,516 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,270 | 6,270 |
 
 **Total test-takers:** 58,053
-- **Shifted level:** 6,215 (10.71%)
-- **Shifted up:** 6,215 (10.71%)
+- **Shifted level:** 5,957 (10.26%)
+- **Shifted up:** 5,957 (10.26%)
 - **Shifted down:** 0 (0%)
 
 ### 2017
@@ -219,15 +219,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,952 |   550 |     0 |     0 |     0 | 5,502 |
-| Level 2 |      0 | 10,140 |  1,214 |      0 |      0 | 11,354 |
-| Level 3 |      0 |      0 | 20,465 |  1,747 |      0 | 22,212 |
-| Level 4 |      0 |      0 |      0 | 10,895 |  1,596 | 12,491 |
-| Level 5 |     0 |     0 |     0 |     0 | 7,115 | 7,115 |
+| Level 1 | 4,445 |   474 |     0 |     0 |     0 | 4,919 |
+| Level 2 |     0 | 9,857 | 1,149 |     0 |     0 | 11,006 |
+| Level 3 |      0 |      0 | 22,365 |  1,757 |      0 | 24,122 |
+| Level 4 |      0 |      0 |      0 | 10,641 |  1,577 | 12,218 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,409 | 6,409 |
 
 **Total test-takers:** 58,674
-- **Shifted level:** 5,107 (8.7%)
-- **Shifted up:** 5,107 (8.7%)
+- **Shifted level:** 4,957 (8.45%)
+- **Shifted up:** 4,957 (8.45%)
 - **Shifted down:** 0 (0%)
 
 ### 2018
@@ -236,15 +236,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,552 |   735 |     0 |     0 |     0 | 5,287 |
-| Level 2 |     0 | 9,708 | 1,745 |     0 |     0 | 11,453 |
-| Level 3 |      0 |      0 | 19,986 |  2,970 |      0 | 22,956 |
-| Level 4 |     0 |     0 |     0 | 9,278 | 2,498 | 11,776 |
-| Level 5 |     0 |     0 |     0 |     0 | 7,290 | 7,290 |
+| Level 1 | 4,037 |   642 |     0 |     0 |     0 | 4,679 |
+| Level 2 |     0 | 9,438 | 1,647 |     0 |     0 | 11,085 |
+| Level 3 |      0 |      0 | 21,906 |  3,010 |      0 | 24,916 |
+| Level 4 |     0 |     0 |     0 | 9,024 | 2,394 | 11,418 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,664 | 6,664 |
 
 **Total test-takers:** 58,762
-- **Shifted level:** 7,948 (13.53%)
-- **Shifted up:** 7,948 (13.53%)
+- **Shifted level:** 7,693 (13.09%)
+- **Shifted up:** 7,693 (13.09%)
 - **Shifted down:** 0 (0%)
 
 ### 2019
@@ -253,15 +253,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 5,124 |   446 |     0 |     0 |     0 | 5,570 |
-| Level 2 |     0 | 9,748 | 1,784 |     0 |     0 | 11,532 |
-| Level 3 |      0 |      0 | 20,062 |  3,448 |      0 | 23,510 |
-| Level 4 |     0 |     0 |     0 | 8,676 | 3,228 | 11,904 |
-| Level 5 |     0 |     0 |     0 |     0 | 7,649 | 7,649 |
+| Level 1 | 4,551 |   462 |     0 |     0 |     0 | 5,013 |
+| Level 2 |     0 | 9,362 | 1,729 |     0 |     0 | 11,091 |
+| Level 3 |      0 |      0 | 22,010 |  3,494 |      0 | 25,504 |
+| Level 4 |     0 |     0 |     0 | 8,379 | 3,208 | 11,587 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,970 | 6,970 |
 
 **Total test-takers:** 60,165
-- **Shifted level:** 8,906 (14.8%)
-- **Shifted up:** 8,906 (14.8%)
+- **Shifted level:** 8,893 (14.78%)
+- **Shifted up:** 8,893 (14.78%)
 - **Shifted down:** 0 (0%)
 
 ### 2020
@@ -270,15 +270,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,188 | 1,694 |     0 |     0 |     0 | 5,882 |
-| Level 2 |     0 | 7,426 | 3,277 |     0 |     0 | 10,703 |
-| Level 3 |      0 |      0 | 18,502 |  5,124 |      0 | 23,626 |
-| Level 4 |     0 |     0 |     0 | 8,556 | 4,168 | 12,724 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,952 | 6,952 |
+| Level 1 | 3,711 | 1,586 |     0 |     0 |     0 | 5,297 |
+| Level 2 |     0 | 7,226 | 3,090 |     0 |     0 | 10,316 |
+| Level 3 |      0 |      0 | 20,597 |  5,072 |      0 | 25,669 |
+| Level 4 |     0 |     0 |     0 | 8,309 | 4,030 | 12,339 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,266 | 6,266 |
 
 **Total test-takers:** 59,887
-- **Shifted level:** 14,263 (23.82%)
-- **Shifted up:** 14,263 (23.82%)
+- **Shifted level:** 13,778 (23.01%)
+- **Shifted up:** 13,778 (23.01%)
 - **Shifted down:** 0 (0%)
 
 ### 2021
@@ -287,15 +287,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 3,099 | 2,366 |     0 |     0 |     0 | 5,465 |
-| Level 2 |     0 | 6,262 | 5,033 |     0 |     0 | 11,295 |
-| Level 3 |      0 |      0 | 16,813 |  7,332 |      0 | 24,145 |
-| Level 4 |     0 |     0 |     0 | 7,227 | 6,114 | 13,341 |
-| Level 5 |     0 |     0 |     0 |     0 | 7,284 | 7,284 |
+| Level 1 | 2,739 | 2,156 |     0 |     0 |     0 | 4,895 |
+| Level 2 |     0 | 6,059 | 4,800 |     0 |     0 | 10,859 |
+| Level 3 |      0 |      0 | 18,939 |  7,298 |      0 | 26,237 |
+| Level 4 |     0 |     0 |     0 | 7,080 | 5,857 | 12,937 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,602 | 6,602 |
 
 **Total test-takers:** 61,530
-- **Shifted level:** 20,845 (33.88%)
-- **Shifted up:** 20,845 (33.88%)
+- **Shifted level:** 20,111 (32.68%)
+- **Shifted up:** 20,111 (32.68%)
 - **Shifted down:** 0 (0%)
 
 
@@ -319,14 +319,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 14,559 |    503 |      0 | 15,062 |
-| Level 2 |      0 | 26,540 |      0 | 26,540 |
-| Level 3 |      0 |    348 | 15,279 | 15,627 |
+| Level 1 | 13,553 |    545 |      0 | 14,098 |
+| Level 2 |      0 | 28,330 |      0 | 28,330 |
+| Level 3 |      0 |    340 | 14,461 | 14,801 |
 
 **Total test-takers:** 57,229
-- **Shifted level:** 851 (1.49%)
-- **Shifted up:** 503 (0.88%)
-- **Shifted down:** 348 (0.61%)
+- **Shifted level:** 885 (1.55%)
+- **Shifted up:** 545 (0.95%)
+- **Shifted down:** 340 (0.59%)
 
 ### 2015
 
@@ -334,13 +334,13 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,968 |    596 |      0 | 14,564 |
-| Level 2 |      0 | 25,901 |  1,286 | 27,187 |
-| Level 3 |      0 |      0 | 15,374 | 15,374 |
+| Level 1 | 12,985 |    560 |      0 | 13,545 |
+| Level 2 |      0 | 27,797 |  1,314 | 29,111 |
+| Level 3 |      0 |      0 | 14,469 | 14,469 |
 
 **Total test-takers:** 57,125
-- **Shifted level:** 1,882 (3.29%)
-- **Shifted up:** 1,882 (3.29%)
+- **Shifted level:** 1,874 (3.28%)
+- **Shifted up:** 1,874 (3.28%)
 - **Shifted down:** 0 (0%)
 
 ### 2016
@@ -349,13 +349,13 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,934 |    716 |      0 | 14,650 |
-| Level 2 |      0 | 26,979 |  1,604 | 28,583 |
-| Level 3 |      0 |      0 | 15,607 | 15,607 |
+| Level 1 | 12,964 |    631 |      0 | 13,595 |
+| Level 2 |      0 | 28,971 |  1,568 | 30,539 |
+| Level 3 |      0 |      0 | 14,706 | 14,706 |
 
 **Total test-takers:** 58,840
-- **Shifted level:** 2,320 (3.94%)
-- **Shifted up:** 2,320 (3.94%)
+- **Shifted level:** 2,199 (3.74%)
+- **Shifted up:** 2,199 (3.74%)
 - **Shifted down:** 0 (0%)
 
 ### 2017
@@ -364,13 +364,13 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 13,690 |    844 |      0 | 14,534 |
-| Level 2 |      0 | 25,693 |  2,547 | 28,240 |
-| Level 3 |      0 |      0 | 15,926 | 15,926 |
+| Level 1 | 12,792 |    713 |      0 | 13,505 |
+| Level 2 |      0 | 27,672 |  2,487 | 30,159 |
+| Level 3 |      0 |      0 | 15,036 | 15,036 |
 
 **Total test-takers:** 58,700
-- **Shifted level:** 3,391 (5.78%)
-- **Shifted up:** 3,391 (5.78%)
+- **Shifted level:** 3,200 (5.45%)
+- **Shifted up:** 3,200 (5.45%)
 - **Shifted down:** 0 (0%)
 
 ### 2018
@@ -379,13 +379,13 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 14,356 |    577 |      0 | 14,933 |
-| Level 2 |      0 | 25,996 |  3,153 | 29,149 |
-| Level 3 |      0 |      0 | 16,398 | 16,398 |
+| Level 1 | 13,552 |    437 |      0 | 13,989 |
+| Level 2 |      0 | 27,879 |  3,149 | 31,028 |
+| Level 3 |      0 |      0 | 15,463 | 15,463 |
 
 **Total test-takers:** 60,480
-- **Shifted level:** 3,730 (6.17%)
-- **Shifted up:** 3,730 (6.17%)
+- **Shifted level:** 3,586 (5.93%)
+- **Shifted up:** 3,586 (5.93%)
 - **Shifted down:** 0 (0%)
 
 ### 2019
@@ -394,14 +394,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 15,619 |      0 |      0 | 15,619 |
-| Level 2 |  1,521 | 26,108 |  1,471 | 29,100 |
-| Level 3 |      0 |      0 | 16,635 | 16,635 |
+| Level 1 | 14,593 |      0 |      0 | 14,593 |
+| Level 2 |  1,614 | 27,996 |  1,534 | 31,144 |
+| Level 3 |      0 |      0 | 15,617 | 15,617 |
 
 **Total test-takers:** 61,354
-- **Shifted level:** 2,992 (4.88%)
-- **Shifted up:** 1,471 (2.4%)
-- **Shifted down:** 1,521 (2.48%)
+- **Shifted level:** 3,148 (5.13%)
+- **Shifted up:** 1,534 (2.5%)
+- **Shifted down:** 1,614 (2.63%)
 
 ### 2020
 
@@ -409,14 +409,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 15,539 |      0 |      0 | 15,539 |
-| Level 2 |  5,145 | 24,170 |      0 | 29,315 |
-| Level 3 |      0 |    458 | 15,138 | 15,596 |
+| Level 1 | 14,507 |      0 |      0 | 14,507 |
+| Level 2 |  5,228 | 26,067 |      0 | 31,295 |
+| Level 3 |      0 |    288 | 14,360 | 14,648 |
 
 **Total test-takers:** 60,450
-- **Shifted level:** 5,603 (9.27%)
+- **Shifted level:** 5,516 (9.12%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 5,603 (9.27%)
+- **Shifted down:** 5,516 (9.12%)
 
 ### 2021
 
@@ -424,14 +424,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 14,580 |      0 |      0 | 14,580 |
-| Level 2 |  1,918 | 24,854 |  1,400 | 28,172 |
-| Level 3 |      0 |      0 | 15,824 | 15,824 |
+| Level 1 | 13,633 |      0 |      0 | 13,633 |
+| Level 2 |  2,035 | 26,555 |  1,523 | 30,113 |
+| Level 3 |      0 |      0 | 14,830 | 14,830 |
 
 **Total test-takers:** 58,576
-- **Shifted level:** 3,318 (5.66%)
-- **Shifted up:** 1,400 (2.39%)
-- **Shifted down:** 1,918 (3.27%)
+- **Shifted level:** 3,558 (6.07%)
+- **Shifted up:** 1,523 (2.6%)
+- **Shifted down:** 2,035 (3.47%)
 
 
 ## Grade 8 (8. trinn)
@@ -452,15 +452,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 5,511 |   391 |     0 |     0 |     0 | 5,902 |
-| Level 2 |      0 | 10,298 |    261 |      0 |      0 | 10,559 |
-| Level 3 |      0 |      0 | 21,151 |      0 |      0 | 21,151 |
-| Level 4 |      0 |      0 |    217 | 12,742 |      0 | 12,959 |
-| Level 5 |     0 |     0 |     0 |   344 | 6,526 | 6,870 |
+| Level 2 |      0 | 12,250 |    256 |      0 |      0 | 12,506 |
+| Level 3 |      0 |      0 | 21,192 |      0 |      0 | 21,192 |
+| Level 4 |      0 |      0 |    265 | 11,736 |      0 | 12,001 |
+| Level 5 |     0 |     0 |     0 |   335 | 5,505 | 5,840 |
 
 **Total test-takers:** 57,441
-- **Shifted level:** 1,213 (2.11%)
-- **Shifted up:** 652 (1.14%)
-- **Shifted down:** 561 (0.98%)
+- **Shifted level:** 1,247 (2.17%)
+- **Shifted up:** 647 (1.13%)
+- **Shifted down:** 600 (1.04%)
 
 ### 2015
 
@@ -469,14 +469,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 3,526 | 1,336 |     0 |     0 |     0 | 4,862 |
-| Level 2 |     0 | 7,866 | 2,868 |     0 |     0 | 10,734 |
-| Level 3 |      0 |      0 | 17,967 |  3,246 |      0 | 21,213 |
-| Level 4 |      0 |      0 |      0 | 10,616 |  2,108 | 12,724 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,761 | 6,761 |
+| Level 2 |     0 | 9,783 | 3,009 |     0 |     0 | 12,792 |
+| Level 3 |      0 |      0 | 17,920 |  3,082 |      0 | 21,002 |
+| Level 4 |      0 |      0 |      0 | 10,036 |  1,956 | 11,992 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,646 | 5,646 |
 
 **Total test-takers:** 56,294
-- **Shifted level:** 9,558 (16.98%)
-- **Shifted up:** 9,558 (16.98%)
+- **Shifted level:** 9,383 (16.67%)
+- **Shifted up:** 9,383 (16.67%)
 - **Shifted down:** 0 (0%)
 
 ### 2016
@@ -486,14 +486,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 4,244 |   605 |     0 |     0 |     0 | 4,849 |
-| Level 2 |     0 | 9,958 | 1,377 |     0 |     0 | 11,335 |
-| Level 3 |      0 |      0 | 20,926 |  1,815 |      0 | 22,741 |
-| Level 4 |      0 |      0 |      0 | 11,290 |  1,178 | 12,468 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,816 | 6,816 |
+| Level 2 |      0 | 12,040 |  1,456 |      0 |      0 | 13,496 |
+| Level 3 |      0 |      0 | 20,788 |  1,817 |      0 | 22,605 |
+| Level 4 |      0 |      0 |      0 | 10,390 |  1,130 | 11,520 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,739 | 5,739 |
 
 **Total test-takers:** 58,209
-- **Shifted level:** 4,975 (8.55%)
-- **Shifted up:** 4,975 (8.55%)
+- **Shifted level:** 5,008 (8.6%)
+- **Shifted up:** 5,008 (8.6%)
 - **Shifted down:** 0 (0%)
 
 ### 2017
@@ -503,14 +503,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 4,617 |   492 |     0 |     0 |     0 | 5,109 |
-| Level 2 |      0 | 10,037 |  1,457 |      0 |      0 | 11,494 |
-| Level 3 |      0 |      0 | 19,880 |  2,368 |      0 | 22,248 |
-| Level 4 |      0 |      0 |      0 | 11,389 |  1,805 | 13,194 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,963 | 6,963 |
+| Level 2 |      0 | 12,010 |  1,635 |      0 |      0 | 13,645 |
+| Level 3 |      0 |      0 | 19,781 |  2,299 |      0 | 22,080 |
+| Level 4 |      0 |      0 |      0 | 10,645 |  1,681 | 12,326 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,848 | 5,848 |
 
 **Total test-takers:** 59,008
-- **Shifted level:** 6,122 (10.37%)
-- **Shifted up:** 6,122 (10.37%)
+- **Shifted level:** 6,107 (10.35%)
+- **Shifted up:** 6,107 (10.35%)
 - **Shifted down:** 0 (0%)
 
 ### 2018
@@ -520,14 +520,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 5,469 |   159 |     0 |     0 |     0 | 5,628 |
-| Level 2 |     0 | 9,671 | 1,227 |     0 |     0 | 10,898 |
-| Level 3 |      0 |      0 | 19,132 |  2,931 |      0 | 22,063 |
-| Level 4 |      0 |      0 |      0 | 11,233 |  2,576 | 13,809 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,656 | 6,656 |
+| Level 2 |      0 | 11,506 |  1,388 |      0 |      0 | 12,894 |
+| Level 3 |      0 |      0 | 19,237 |  2,954 |      0 | 22,191 |
+| Level 4 |      0 |      0 |      0 | 10,461 |  2,353 | 12,814 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,527 | 5,527 |
 
 **Total test-takers:** 59,054
-- **Shifted level:** 6,893 (11.67%)
-- **Shifted up:** 6,893 (11.67%)
+- **Shifted level:** 6,854 (11.61%)
+- **Shifted up:** 6,854 (11.61%)
 - **Shifted down:** 0 (0%)
 
 ### 2019
@@ -537,14 +537,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 4,957 |    69 |     0 |     0 |     0 | 5,026 |
-| Level 2 |      0 | 11,740 |    629 |      0 |      0 | 12,369 |
-| Level 3 |      0 |      0 | 21,958 |  1,426 |      0 | 23,384 |
-| Level 4 |      0 |      0 |      0 | 11,998 |  1,064 | 13,062 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,728 | 6,728 |
+| Level 2 |      0 | 13,909 |    773 |      0 |      0 | 14,682 |
+| Level 3 |      0 |      0 | 21,702 |  1,377 |      0 | 23,079 |
+| Level 4 |      0 |      0 |      0 | 11,067 |  1,016 | 12,083 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,699 | 5,699 |
 
 **Total test-takers:** 60,569
-- **Shifted level:** 3,188 (5.26%)
-- **Shifted up:** 3,188 (5.26%)
+- **Shifted level:** 3,235 (5.34%)
+- **Shifted up:** 3,235 (5.34%)
 - **Shifted down:** 0 (0%)
 
 ### 2020
@@ -554,15 +554,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 5,191 |     0 |     0 |     0 |     0 | 5,191 |
-| Level 2 |  1,950 | 10,429 |      0 |      0 |      0 | 12,379 |
-| Level 3 |      0 |  2,192 | 21,088 |      0 |      0 | 23,280 |
-| Level 4 |      0 |      0 |    592 | 11,690 |    294 | 12,576 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,754 | 6,754 |
+| Level 2 |  1,950 | 12,699 |      0 |      0 |      0 | 14,649 |
+| Level 3 |      0 |  2,083 | 20,956 |      0 |      0 | 23,039 |
+| Level 4 |      0 |      0 |    449 | 10,811 |    328 | 11,588 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,713 | 5,713 |
 
 **Total test-takers:** 60,180
-- **Shifted level:** 5,028 (8.35%)
-- **Shifted up:** 294 (0.49%)
-- **Shifted down:** 4,734 (7.87%)
+- **Shifted level:** 4,810 (7.99%)
+- **Shifted up:** 328 (0.55%)
+- **Shifted down:** 4,482 (7.45%)
 
 ### 2021
 
@@ -571,15 +571,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
 | Level 1 | 5,675 |     0 |     0 |     0 |     0 | 5,675 |
-| Level 2 |  1,928 | 10,074 |      0 |      0 |      0 | 12,002 |
-| Level 3 |      0 |  2,080 | 21,629 |      0 |      0 | 23,709 |
-| Level 4 |      0 |      0 |    160 | 12,645 |    788 | 13,593 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,698 | 6,698 |
+| Level 2 |  1,928 | 12,316 |      0 |      0 |      0 | 14,244 |
+| Level 3 |      0 |  1,967 | 21,583 |     57 |      0 | 23,607 |
+| Level 4 |      0 |      0 |      0 | 11,767 |    774 | 12,541 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,610 | 5,610 |
 
 **Total test-takers:** 61,677
-- **Shifted level:** 4,956 (8.04%)
-- **Shifted up:** 788 (1.28%)
-- **Shifted down:** 4,168 (6.76%)
+- **Shifted level:** 4,726 (7.66%)
+- **Shifted up:** 831 (1.35%)
+- **Shifted down:** 3,895 (6.32%)
 
 
 # Reading (Lesing)
@@ -602,14 +602,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,770 |  1,011 |      0 | 13,781 |
-| Level 2 |      0 | 26,238 |      0 | 26,238 |
-| Level 3 |      0 |    333 | 17,957 | 18,290 |
+| Level 1 | 13,791 |  1,031 |      0 | 14,822 |
+| Level 2 |      0 | 27,882 |      0 | 27,882 |
+| Level 3 |      0 |    432 | 15,173 | 15,605 |
 
 **Total test-takers:** 58,309
-- **Shifted level:** 1,344 (2.3%)
-- **Shifted up:** 1,011 (1.73%)
-- **Shifted down:** 333 (0.57%)
+- **Shifted level:** 1,463 (2.51%)
+- **Shifted up:** 1,031 (1.77%)
+- **Shifted down:** 432 (0.74%)
 
 ### 2017
 
@@ -617,14 +617,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,773 |      0 |      0 | 12,773 |
-| Level 2 |  1,033 | 25,584 |    668 | 27,285 |
-| Level 3 |      0 |      0 | 18,120 | 18,120 |
+| Level 1 | 13,801 |      0 |      0 | 13,801 |
+| Level 2 |    979 | 27,306 |    800 | 29,085 |
+| Level 3 |      0 |      0 | 15,292 | 15,292 |
 
 **Total test-takers:** 58,178
-- **Shifted level:** 1,701 (2.92%)
-- **Shifted up:** 668 (1.15%)
-- **Shifted down:** 1,033 (1.78%)
+- **Shifted level:** 1,779 (3.06%)
+- **Shifted up:** 800 (1.38%)
+- **Shifted down:** 979 (1.68%)
 
 ### 2018
 
@@ -632,14 +632,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,813 |      0 |      0 | 12,813 |
-| Level 2 |  2,356 | 26,549 |      0 | 28,905 |
-| Level 3 |      0 |    228 | 17,846 | 18,074 |
+| Level 1 | 13,833 |      0 |      0 | 13,833 |
+| Level 2 |  2,210 | 28,568 |      3 | 30,781 |
+| Level 3 |      0 |      0 | 15,178 | 15,178 |
 
 **Total test-takers:** 59,792
-- **Shifted level:** 2,584 (4.32%)
-- **Shifted up:** 0 (0%)
-- **Shifted down:** 2,584 (4.32%)
+- **Shifted level:** 2,213 (3.7%)
+- **Shifted up:** 3 (0.01%)
+- **Shifted down:** 2,210 (3.7%)
 
 ### 2019
 
@@ -647,14 +647,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,813 |      0 |      0 | 12,813 |
-| Level 2 |  4,920 | 25,342 |      0 | 30,262 |
-| Level 3 |      0 |  1,336 | 16,288 | 17,624 |
+| Level 1 | 13,930 |      0 |      0 | 13,930 |
+| Level 2 |  4,807 | 27,147 |      0 | 31,954 |
+| Level 3 |      0 |    934 | 13,881 | 14,815 |
 
 **Total test-takers:** 60,699
-- **Shifted level:** 6,256 (10.31%)
+- **Shifted level:** 5,741 (9.46%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 6,256 (10.31%)
+- **Shifted down:** 5,741 (9.46%)
 
 ### 2020
 
@@ -662,14 +662,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,820 |      0 |      0 | 12,820 |
-| Level 2 |  5,429 | 24,194 |      0 | 29,623 |
-| Level 3 |      0 |  1,932 | 15,477 | 17,409 |
+| Level 1 | 13,948 |      0 |      0 | 13,948 |
+| Level 2 |  5,380 | 25,871 |      0 | 31,251 |
+| Level 3 |      0 |  1,505 | 13,148 | 14,653 |
 
 **Total test-takers:** 59,852
-- **Shifted level:** 7,361 (12.3%)
+- **Shifted level:** 6,885 (11.5%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 7,361 (12.3%)
+- **Shifted down:** 6,885 (11.5%)
 
 ### 2021
 
@@ -677,14 +677,14 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Total |
 |---:|---:|---:|---:|---:|
-| Level 1 | 12,155 |      0 |      0 | 12,155 |
-| Level 2 |  4,983 | 24,146 |      0 | 29,129 |
-| Level 3 |      0 |    576 | 16,141 | 16,717 |
+| Level 1 | 13,242 |      0 |      0 | 13,242 |
+| Level 2 |  4,858 | 25,930 |      0 | 30,788 |
+| Level 3 |      0 |     77 | 13,894 | 13,971 |
 
 **Total test-takers:** 58,001
-- **Shifted level:** 5,559 (9.58%)
+- **Shifted level:** 4,935 (8.51%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 5,559 (9.58%)
+- **Shifted down:** 4,935 (8.51%)
 
 
 ## Grade 8 (8. trinn)
@@ -704,16 +704,16 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,285 |   783 |     0 |     0 |     0 | 5,068 |
-| Level 2 |      0 | 11,122 |    788 |      0 |      0 | 11,910 |
-| Level 3 |      0 |      0 | 22,017 |      0 |      0 | 22,017 |
-| Level 4 |      0 |      0 |    238 | 11,455 |      0 | 11,693 |
-| Level 5 |     0 |     0 |     0 |   543 | 6,851 | 7,394 |
+| Level 1 | 3,730 |   756 |     0 |     0 |     0 | 4,486 |
+| Level 2 |      0 | 10,625 |    774 |      0 |      0 | 11,399 |
+| Level 3 |      0 |      0 | 24,043 |      0 |      0 | 24,043 |
+| Level 4 |      0 |      0 |    242 | 11,064 |      0 | 11,306 |
+| Level 5 |     0 |     0 |     0 |   589 | 6,259 | 6,848 |
 
 **Total test-takers:** 58,082
-- **Shifted level:** 2,352 (4.05%)
-- **Shifted up:** 1,571 (2.7%)
-- **Shifted down:** 781 (1.34%)
+- **Shifted level:** 2,361 (4.06%)
+- **Shifted up:** 1,530 (2.63%)
+- **Shifted down:** 831 (1.43%)
 
 ### 2017
 
@@ -721,16 +721,16 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,494 |     0 |     0 |     0 |     0 | 4,494 |
-| Level 2 |    155 | 11,582 |    449 |      0 |      0 | 12,186 |
-| Level 3 |      0 |      0 | 21,266 |  1,386 |      0 | 22,652 |
-| Level 4 |      0 |      0 |      0 | 11,191 |  1,232 | 12,423 |
-| Level 5 |     0 |     0 |     0 |     0 | 7,078 | 7,078 |
+| Level 1 | 3,921 |     0 |     0 |     0 |     0 | 3,921 |
+| Level 2 |    151 | 11,130 |    401 |      0 |      0 | 11,682 |
+| Level 3 |      0 |      0 | 23,301 |  1,450 |      0 | 24,751 |
+| Level 4 |      0 |      0 |      0 | 10,764 |  1,146 | 11,910 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,569 | 6,569 |
 
 **Total test-takers:** 58,833
-- **Shifted level:** 3,222 (5.48%)
-- **Shifted up:** 3,067 (5.21%)
-- **Shifted down:** 155 (0.26%)
+- **Shifted level:** 3,148 (5.35%)
+- **Shifted up:** 2,997 (5.09%)
+- **Shifted down:** 151 (0.26%)
 
 ### 2018
 
@@ -738,16 +738,16 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 4,787 |     0 |     0 |     0 |     0 | 4,787 |
-| Level 2 |     26 | 10,703 |    708 |      0 |      0 | 11,437 |
-| Level 3 |      0 |      0 | 21,191 |  1,822 |      0 | 23,013 |
-| Level 4 |      0 |      0 |      0 | 11,504 |  1,514 | 13,018 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,697 | 6,697 |
+| Level 1 | 4,293 |     0 |     0 |     0 |     0 | 4,293 |
+| Level 2 |     41 | 10,243 |    609 |      0 |      0 | 10,893 |
+| Level 3 |      0 |      0 | 23,268 |  1,795 |      0 | 25,063 |
+| Level 4 |      0 |      0 |      0 | 11,066 |  1,465 | 12,531 |
+| Level 5 |     0 |     0 |     0 |     0 | 6,172 | 6,172 |
 
 **Total test-takers:** 58,952
-- **Shifted level:** 4,070 (6.9%)
-- **Shifted up:** 4,044 (6.86%)
-- **Shifted down:** 26 (0.04%)
+- **Shifted level:** 3,910 (6.63%)
+- **Shifted up:** 3,869 (6.56%)
+- **Shifted down:** 41 (0.07%)
 
 ### 2019
 
@@ -755,15 +755,15 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 5,341 |    77 |     0 |     0 |     0 | 5,418 |
-| Level 2 |     0 | 9,782 |   528 |     0 |     0 | 10,310 |
-| Level 3 |      0 |      0 | 22,783 |  1,064 |      0 | 23,847 |
-| Level 4 |      0 |      0 |      0 | 13,898 |    751 | 14,649 |
-| Level 5 |     0 |     0 |     0 |     0 | 6,153 | 6,153 |
+| Level 1 | 4,819 |    96 |     0 |     0 |     0 | 4,915 |
+| Level 2 |     0 | 9,360 |   466 |     0 |     0 | 9,826 |
+| Level 3 |      0 |      0 | 24,924 |  1,089 |      0 | 26,013 |
+| Level 4 |      0 |      0 |      0 | 13,319 |    737 | 14,056 |
+| Level 5 |     0 |     0 |     0 |     0 | 5,567 | 5,567 |
 
 **Total test-takers:** 60,377
-- **Shifted level:** 2,420 (4.01%)
-- **Shifted up:** 2,420 (4.01%)
+- **Shifted level:** 2,388 (3.96%)
+- **Shifted up:** 2,388 (3.96%)
 - **Shifted down:** 0 (0%)
 
 ### 2020
@@ -772,16 +772,16 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 5,084 |     0 |     0 |     0 |     0 | 5,084 |
-| Level 2 |  1,601 | 10,394 |      0 |      0 |      0 | 11,995 |
-| Level 3 |      0 |  2,416 | 20,495 |      0 |      0 | 22,911 |
-| Level 4 |      0 |      0 |  2,048 | 11,834 |      0 | 13,882 |
-| Level 5 |     0 |     0 |     0 |   829 | 5,473 | 6,302 |
+| Level 1 | 4,493 |     0 |     0 |     0 |     0 | 4,493 |
+| Level 2 |  1,529 | 10,082 |      0 |      0 |      0 | 11,611 |
+| Level 3 |      0 |  2,346 | 22,694 |      0 |      0 | 25,040 |
+| Level 4 |      0 |      0 |  1,884 | 11,392 |      0 | 13,276 |
+| Level 5 |     0 |     0 |     0 |   793 | 4,961 | 5,754 |
 
 **Total test-takers:** 60,174
-- **Shifted level:** 6,894 (11.46%)
+- **Shifted level:** 6,552 (10.89%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 6,894 (11.46%)
+- **Shifted down:** 6,552 (10.89%)
 
 ### 2021
 
@@ -789,22 +789,22 @@ Green segments indicate scores that were upgraded; red segments indicate downgra
 
 | Original | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Total |
 |---:|---:|---:|---:|---:|---:|---:|
-| Level 1 | 5,362 |     0 |     0 |     0 |     0 | 5,362 |
-| Level 2 | 2,362 | 9,847 |     0 |     0 |     0 | 12,209 |
-| Level 3 |      0 |  3,396 | 19,940 |      0 |      0 | 23,336 |
-| Level 4 |      0 |      0 |  2,666 | 11,305 |      0 | 13,971 |
-| Level 5 |     0 |     0 |     0 | 1,165 | 5,485 | 6,650 |
+| Level 1 | 4,766 |     0 |     0 |     0 |     0 | 4,766 |
+| Level 2 | 2,196 | 9,593 |     0 |     0 |     0 | 11,789 |
+| Level 3 |      0 |  3,322 | 22,115 |      0 |      0 | 25,437 |
+| Level 4 |      0 |      0 |  2,560 | 10,867 |      0 | 13,427 |
+| Level 5 |     0 |     0 |     0 | 1,115 | 4,994 | 6,109 |
 
 **Total test-takers:** 61,528
-- **Shifted level:** 9,589 (15.58%)
+- **Shifted level:** 9,193 (14.94%)
 - **Shifted up:** 0 (0%)
-- **Shifted down:** 9,589 (15.58%)
+- **Shifted down:** 9,193 (14.94%)
 
 
 # Summary
 
 **Total students analyzed:** 2,596,963
-- **Total shifted:** 223,276 (8.6%)
-- **Shifted up:** 147,313 (5.67%)
-- **Shifted down:** 75,963 (2.93%)
+- **Total shifted:** 216,905 (8.35%)
+- **Shifted up:** 144,573 (5.57%)
+- **Shifted down:** 72,332 (2.79%)
 

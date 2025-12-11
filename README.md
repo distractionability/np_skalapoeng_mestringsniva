@@ -4,7 +4,7 @@ R-kode for å korrigere feilaktige skalapoeng fra nasjonale prøver (2014-2021) 
 
 ## Bakgrunn
 
-SSB oppdaget i 2023 at skalapoengene fra nasjonale prøver hadde en feil i beregningen som førte til at spredningen (standardavviket) gradvis ble underestimert over tid. Denne koden bruker SSBs omskaleringsparametre til å korrigere poengene og viser hvor mange elever som ble feilklassifisert til feil mestringsnivå.
+Skalapoengene fra nasjonale prøver hadde en feil i beregningen som førte til at spredningen (standardavviket) gradvis ble underestimert over tid. Feilen ble oppdaget og dokumentert i Markussen mfl. (2024) ["Skoleferdigheter i endring: Utviklingen over tid målt ved nasjonale prøver"](https://journals.uio.no/adnorden/article/view/10310/8987), *Acta Didactica Norden*, 18(1). SSB har publisert omskaleringsparametre for å korrigere poengene. Denne koden bruker disse parametrene og viser hvor mange elever som ble feilklassifisert til feil mestringsnivå.
 
 ## Filstruktur
 
@@ -18,7 +18,8 @@ SSB oppdaget i 2023 at skalapoengene fra nasjonale prøver hadde en feil i bereg
 │   ├── verification_analysis.R     # Verifisering mot originaldata
 │   ├── discrepancy_ranges.R        # Beregner avviksintervaller
 │   ├── discrepancy_visualization.R # Visualisering av avvik
-│   └── shift_summary_plot.R        # Sammendragsplott for nivåendringer
+│   ├── shift_summary_plot.R        # Sammendragsplott for nivåendringer
+│   └── threshold_identification.R  # Empirisk identifisering av grenser
 ├── data/
 │   ├── npole.dta                   # Hoveddatasett (Stata-format)
 │   └── rescaling_parameters.csv    # SSBs omskaleringsparametre (Tabell 1)
@@ -30,6 +31,9 @@ SSB oppdaget i 2023 at skalapoengene fra nasjonale prøver hadde en feil i bereg
 │   ├── score_correction_report.pdf # Hovedrapport
 │   ├── score_correction_report.md  # Rapport i Markdown-format
 │   ├── verification/               # Verifiseringsresultater
+│   ├── threshold_identification/   # Grenseidentifiseringsanalyse
+│   │   ├── threshold_report.pdf    # Detaljert dokumentasjon
+│   │   └── *.csv                   # Rådata fra analysen
 │   └── plots/                      # Visualiseringer
 │       ├── transformations/        # Transformasjonsplott per år/fag
 │       └── discrepancy_ranges/     # Avviksintervallplott
@@ -137,33 +141,60 @@ Parametrene leses fra `data/rescaling_parameters.csv`.
 
 ## Mestringsnivågrenser
 
+### Bakgrunn for grenseidentifisering
+
+Martin Flatø (FHI) påpekte at grensene vi opprinnelig brukte (hentet fra Udirs dokumentasjon) ikke stemte overens med de faktiske grensene som historisk har blitt brukt i klassifiseringen. Dette motiverte en empirisk analyse for å identifisere de faktiske grensene fra registerdata.
+
+Ifølge [Udirs rammeverk for nasjonale prøver](https://www.udir.no/eksamen-og-prover/prover/rammeverk-for-nasjonale-prover2/gjennomforing-og-resultater/) (se også `docs/UDIR_gjennomforing_resultater.pdf`):
+- Grensene fastsettes etter prosentilfordeling: **25–50–25** for 5. trinn og **10–20–40–20–10** for 8. trinn
+- Grensene settes i første testår og **holdes deretter konstante** over tid
+
+Grensene nedenfor er empirisk identifisert fra første testår (2014) ved hjelp av registerdata fra SSB. Klassifiseringsregel: poengsum ≥ grense → høyere nivå. Se `output/threshold_identification/threshold_report.pdf` for detaljert dokumentasjon av grenseidentifiseringen.
+
 ### 5. trinn (3 nivåer)
-| Fag | Nivå 1 | Nivå 2 | Nivå 3 |
-|-----|--------|--------|--------|
-| Regning | ≤43 | 44-56 | ≥57 |
-| Lesing | ≤42 | 43-55 | ≥56 |
-| Engelsk | ≤42 | 43-57 | ≥58 |
+
+Alle fag brukte samme grenser i 2014:
+| Grense 1→2 | Grense 2→3 |
+|:----------:|:----------:|
+| 42.5 | 56.5 |
 
 ### 8. trinn (5 nivåer)
-| Fag | Nivå 1 | Nivå 2 | Nivå 3 | Nivå 4 | Nivå 5 |
-|-----|--------|--------|--------|--------|--------|
-| Regning | ≤37 | 38-44 | 45-54 | 55-62 | ≥63 |
-| Lesing | ≤37 | 38-44 | 45-54 | 55-62 | ≥63 |
-| Engelsk | ≤37 | 38-44 | 45-55 | 56-62 | ≥63 |
+
+| Fag | Grense 1→2 | Grense 2→3 | Grense 3→4 | Grense 4→5 |
+|---------|:----------:|:----------:|:----------:|:----------:|
+| Regning | 37.0 | 45.0 | 55.0 | 63.0 |
+| Lesing | 36.5 | 43.5 | 54.5 | 62.5 |
+| Engelsk | 36.5 | 43.5 | 55.5 | 62.5 |
+
+*Merk: Regning 8. trinn brukte heltallsgrenser i 2014 (37, 45, 55, 63). Fra 2015 gikk også dette faget over til X.5-grenser (36.5, 44.5, 54.5, 62.5). Tabellen viser 2014-verdiene som brukes konsekvent i analysen.*
+
+### Metodologisk valg: Konstante grenser
+
+Analysen bruker 2014-grensene konsekvent for alle år (2014–2021). Dette valget er gjort fordi:
+1. **Udirs intensjon**: Ifølge dokumentasjonen skal grensene settes i første testår og deretter holdes konstante
+2. **Sammenlignbarhet**: Konstante grenser muliggjør ren sammenligning av korreksjonseffekten over tid
+3. **Verifisert**: Analysen viser >99.9% samsvar mellom beregnede nivåer og faktiske nivåtildelinger i data fra dette året
+
+Merk at den empiriske analysen avdekket mindre grenseendringer i enkelte år (se `output/threshold_identification/threshold_report.pdf`). Disse grenseverdi-endringene er oss bekjent ikke kommunisert utad eller dokumentert tidligere. Ved å bruke konstante 2014-grenser kan våre nivåtildelinger avvike marginalt fra Udirs offisielle klassifiseringer i år der grenser faktisk ble endret.
+
+### Analyseperiode
+
+Analysen dekker årene **2014–2021**. Data fra 2022 og senere er ekskludert fordi skalapoengene fra dette året kun rapporteres som heltall, noe som utgjør et brudd i tidsserien og krever en annen analysemetodikk.
 
 ## Tilpasning
 
 ### Endre mestringsnivågrenser
 
-Rediger `mastery_cutoffs` i `R/config.R`:
+Rediger `mastery_cutoffs` i `R/config.R`. Klassifiseringsregel: poengsum ≥ grense → høyere nivå.
 
 ```r
 mastery_cutoffs <- list(
   grade5 = list(
-    MATH = c(-Inf, 43, 56, Inf),  # Nivågrenser for regning 5. trinn
+    MATH = c(-Inf, 42.5, 56.5, Inf),  # Grenser for regning 5. trinn
     ...
   ),
   grade8 = list(
+    MATH = c(-Inf, 37.0, 45.0, 55.0, 63.0, Inf),  # Grenser for regning 8. trinn
     ...
   )
 )

@@ -56,22 +56,24 @@ rescaling_params[, year := as.integer(substr(school_year, 1, 4))]
 # Set key for fast lookup
 setkey(rescaling_params, subject, grade_level, year)
 
-# Mastery level cutoffs from Udir framework
-# 5. trinn: 3 levels (25-50-25 distribution)
-# 8. trinn: 5 levels (10-20-40-20-10 distribution)
+# Mastery level cutoffs - empirically identified from first year (2014)
+# Based on threshold identification analysis using SSB register data
+# Classification rule: score >= threshold -> higher level
+# 5. trinn: 3 levels (25-50-25 target distribution)
+# 8. trinn: 5 levels (10-20-40-20-10 target distribution)
 
 mastery_cutoffs <- list(
-  # Grade 5 cutoffs (3 levels)
+  # Grade 5 cutoffs (3 levels) - all subjects used same thresholds in 2014
   grade5 = list(
-    MATH = c(-Inf, 43, 56, Inf),      # Level 1: <=43, Level 2: 44-56, Level 3: >=57
-    NOR  = c(-Inf, 42, 55, Inf),      # Level 1: <=42, Level 2: 43-55, Level 3: >=56
-    ENG  = c(-Inf, 42, 57, Inf)       # Level 1: <=42, Level 2: 43-57, Level 3: >=58
+    MATH = c(-Inf, 42.5, 56.5, Inf),  # Level 1: <42.5, Level 2: 42.5-56.5, Level 3: >=56.5
+    NOR  = c(-Inf, 42.5, 56.5, Inf),  # Level 1: <42.5, Level 2: 42.5-56.5, Level 3: >=56.5
+    ENG  = c(-Inf, 42.5, 56.5, Inf)   # Level 1: <42.5, Level 2: 42.5-56.5, Level 3: >=56.5
   ),
-  # Grade 8 cutoffs (5 levels)
+  # Grade 8 cutoffs (5 levels) - 2014 empirical values
   grade8 = list(
-    MATH = c(-Inf, 37, 44, 54, 62, Inf),  # Levels 1-5
-    NOR  = c(-Inf, 37, 44, 54, 62, Inf),  # Levels 1-5
-    ENG  = c(-Inf, 37, 44, 55, 62, Inf)   # Levels 1-5
+    MATH = c(-Inf, 37.0, 45.0, 55.0, 63.0, Inf),  # 2014 used integer cutpoints
+    NOR  = c(-Inf, 36.5, 43.5, 54.5, 62.5, Inf),  # Levels 1-5
+    ENG  = c(-Inf, 36.5, 43.5, 55.5, 62.5, Inf)   # Levels 1-5
   )
 )
 

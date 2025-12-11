@@ -1,0 +1,471 @@
+---
+title: "Threshold Identification Report"
+subtitle: "Cutpoints for mestringsnivå classification (2014-2021)"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+geometry: margin=0.75in
+fontsize: 10pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(knitr)
+library(kableExtra)
+```
+
+# Overview
+
+This report documents the cutpoints (thresholds) used to map skalapoeng
+(scale scores) to mestringsnivå (mastery levels) in the Norwegian national
+test data for the period 2014-2021.
+
+# Methodology
+
+## Threshold Setting Process (per Udir documentation)
+
+According to Udir, thresholds were set in the first test year to achieve
+the following percentile distributions:
+
+- **Grade 5**: 25% – 50% – 25% (Levels 1, 2, 3)
+- **Grade 8**: 10% – 20% – 40% – 20% – 10% (Levels 1, 2, 3, 4, 5)
+
+```{r target-percentiles}
+target_df <- data.frame(
+  Grade = c(5, 5, 8, 8, 8, 8),
+  Threshold = c(1, 2, 1, 2, 3, 4),
+  Transition = c("1 → 2", "2 → 3", "1 → 2", "2 → 3", "3 → 4", "4 → 5"),
+  Target = c("25th", "75th", "10th", "30th", "70th", "90th")
+)
+
+kable(target_df, col.names = c("Grade", "Threshold", "Lower → Upper", "Target Pctl"),
+      align = "cccl", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE) %>%
+  row_spec(2, extra_latex_after = "\\midrule")
+```
+
+## Empirical Identification
+
+For each year × subject × grade × threshold, we identify:
+
+1. **lower_max**: Maximum score among students at the lower level
+2. **upper_min**: Minimum score among students at the higher level
+
+The classification rule is: `score >= threshold → higher level`
+
+With 3-decimal precision scores, we can identify thresholds exactly.
+
+\newpage
+
+# Percentile Analysis: First Year Thresholds
+
+These tables compare target vs actual percentiles for the first year (2014).
+
+
+## Grade 5
+
+### English (Engelsk)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Target_Pctl = c("25%", "75%"),
+  Target_Score = c(42.55, 56.51),
+  Actual_Threshold = c(42.5, 56.5),
+  Actual_Pctl = c("24.8%", "75.0%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Mathematics (Regning)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Target_Pctl = c("25%", "75%"),
+  Target_Score = c(42.61, 56.83),
+  Actual_Threshold = c(42.5, 56.5),
+  Actual_Pctl = c("24.6%", "74.1%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Reading (Lesing)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Target_Pctl = c("25%", "75%"),
+  Target_Score = c(43.06, 56.87),
+  Actual_Threshold = c(42.5, 56.5),
+  Actual_Pctl = c("23.2%", "73.8%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+
+## Grade 8
+
+### English (Engelsk)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Target_Pctl = c("10%", "30%", "70%", "90%"),
+  Target_Score = c(36.89, 44.00, 55.96, 63.24),
+  Actual_Threshold = c(36.5, 43.5, 55.5, 62.5),
+  Actual_Pctl = c("9.2%", "28.4%", "68.6%", "88.5%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Mathematics (Regning)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Target_Pctl = c("10%", "30%", "70%", "90%"),
+  Target_Score = c(36.88, 44.42, 55.31, 63.11),
+  Actual_Threshold = c(37.0, 45.0, 55.0, 63.0),
+  Actual_Pctl = c("10.3%", "32.0%", "68.9%", "89.8%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Reading (Lesing)
+
+```{r}
+pctl_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Target_Pctl = c("10%", "30%", "70%", "90%"),
+  Target_Score = c(37.23, 44.54, 55.34, 63.13),
+  Actual_Threshold = c(36.5, 43.5, 54.5, 62.5),
+  Actual_Pctl = c("8.7%", "26.5%", "67.2%", "88.9%")
+)
+kable(pctl_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Target Pctl",
+                    "Score at Target", "Actual Cutpoint", "Actual Pctl"),
+      align = "cccccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+\newpage
+
+# Cutpoint Tables by Subject
+
+
+## Grade 5
+
+### English (Engelsk)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Cutpoint = c(42.5, 56.5)
+)
+kable(cutpoint_tbl, col.names = c("Lower nivå", "Upper nivå", "2014-2021"),
+      align = "ccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Mathematics (Regning)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Cutpoint = c(42.5, 56.5)
+)
+kable(cutpoint_tbl, col.names = c("Lower nivå", "Upper nivå", "2014-2021"),
+      align = "ccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Reading (Lesing)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 2, 2),
+  Upper = c(2, 3, 3),
+  Years = c("2014-2021", "2014, 2015", "2016-2021"),
+  Cutpoint = c(42.5, 56.5, 57.5)
+)
+kable(cutpoint_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Years", "Cutpoint"),
+      align = "cclc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+
+## Grade 8
+
+### English (Engelsk)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Cutpoint = c(36.5, 43.5, 55.5, 62.5)
+)
+kable(cutpoint_tbl, col.names = c("Lower nivå", "Upper nivå", "2014-2021"),
+      align = "ccc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Mathematics (Regning)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 1, 2, 2, 3, 3, 4, 4),
+  Upper = c(2, 2, 3, 3, 4, 4, 5, 5),
+  Years = c("2014", "2015-2021", "2014", "2015-2021", "2014", "2015-2021", "2014", "2015-2021"),
+  Cutpoint = c(37.0, 36.5, 45.0, 44.5, 55.0, 54.5, 63.0, 62.5)
+)
+kable(cutpoint_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Years", "Cutpoint"),
+      align = "cclc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+### Reading (Lesing)
+
+```{r}
+cutpoint_tbl <- data.frame(
+  Lower = c(1, 1, 2, 2, 3, 4),
+  Upper = c(2, 2, 3, 3, 4, 5),
+  Years = c("2014, 2015", "2016-2021", "2014, 2016-2021", "2015", "2014-2021", "2014-2021"),
+  Cutpoint = c(36.5, 37.5, 43.5, 44.5, 54.5, 62.5)
+)
+kable(cutpoint_tbl,
+      col.names = c("Lower nivå", "Upper nivå", "Years", "Cutpoint"),
+      align = "cclc", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position"), full_width = FALSE)
+```
+
+\newpage
+
+# Detailed Year-by-Year Thresholds
+
+For reference, exact upper_min values. Small variations (e.g., 42.500 vs 42.501)
+reflect measurement precision, not threshold differences.
+
+
+## Grade 5
+
+### English (Engelsk)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Y2014 = c("42.501", "56.500"),
+  Y2015 = c("42.500", "56.500"),
+  Y2016 = c("42.500", "56.500"),
+  Y2017 = c("42.500", "56.500"),
+  Y2018 = c("42.500", "56.500"),
+  Y2019 = c("42.500", "56.500"),
+  Y2020 = c("42.500", "56.500"),
+  Y2021 = c("42.500", "56.500")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+### Mathematics (Regning)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Y2014 = c("42.500", "56.500"),
+  Y2015 = c("42.500", "56.500"),
+  Y2016 = c("42.500", "56.502"),
+  Y2017 = c("42.500", "56.500"),
+  Y2018 = c("42.501", "56.501"),
+  Y2019 = c("42.500", "56.500"),
+  Y2020 = c("42.500", "56.500"),
+  Y2021 = c("42.500", "56.500")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+### Reading (Lesing)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2),
+  Upper = c(2, 3),
+  Y2014 = c("42.500", "56.500"),
+  Y2015 = c("42.500", "56.500"),
+  Y2016 = c("42.501", "57.500"),
+  Y2017 = c("42.500", "57.500"),
+  Y2018 = c("42.500", "57.500"),
+  Y2019 = c("42.500", "57.500"),
+  Y2020 = c("42.501", "57.500"),
+  Y2021 = c("42.500", "57.501")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+
+## Grade 8
+
+### English (Engelsk)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Y2014 = c("36.500", "43.500", "55.500", "62.501"),
+  Y2015 = c("36.500", "43.500", "55.500", "62.501"),
+  Y2016 = c("36.500", "43.500", "55.500", "62.500"),
+  Y2017 = c("36.500", "43.501", "55.500", "62.501"),
+  Y2018 = c("36.500", "43.500", "55.500", "62.500"),
+  Y2019 = c("36.501", "43.500", "55.500", "62.500"),
+  Y2020 = c("36.500", "43.500", "55.500", "62.500"),
+  Y2021 = c("36.500", "43.500", "55.500", "62.501")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+### Mathematics (Regning)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Y2014 = c("37.000", "45.000", "55.000", "63.000"),
+  Y2015 = c("36.500", "44.500", "54.500", "62.500"),
+  Y2016 = c("36.500", "44.500", "54.500", "62.500"),
+  Y2017 = c("36.500", "44.500", "54.500", "62.501"),
+  Y2018 = c("36.500", "44.501", "54.500", "62.501"),
+  Y2019 = c("36.501", "44.500", "54.500", "62.500"),
+  Y2020 = c("36.500", "44.500", "54.500", "62.501"),
+  Y2021 = c("36.501", "44.500", "54.501", "62.501")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+### Reading (Lesing)
+
+```{r}
+detail_tbl <- data.frame(
+  Lower = c(1, 2, 3, 4),
+  Upper = c(2, 3, 4, 5),
+  Y2014 = c("36.500", "43.500", "54.500", "62.500"),
+  Y2015 = c("36.503", "44.500", "54.500", "62.501"),
+  Y2016 = c("37.500", "43.500", "54.500", "62.501"),
+  Y2017 = c("37.500", "43.500", "54.500", "62.503"),
+  Y2018 = c("37.500", "43.500", "54.500", "62.501"),
+  Y2019 = c("37.500", "43.500", "54.500", "62.500"),
+  Y2020 = c("37.501", "43.501", "54.500", "62.500"),
+  Y2021 = c("37.500", "43.500", "54.500", "62.500")
+)
+kable(detail_tbl,
+      col.names = c("Lower", "Upper", "2014", "2015", "2016", "2017",
+                    "2018", "2019", "2020", "2021"),
+      align = "ccrrrrrrrr", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down"),
+                full_width = FALSE, font_size = 9)
+```
+
+\newpage
+
+# Key Findings
+
+
+1. **Score precision**: Skalapoeng values have 3-decimal precision
+
+2. **Clean separation**: All level boundaries have positive gaps (no misclassifications)
+
+3. **Threshold format**: Most thresholds are at X.5 (e.g., 42.5, 56.5)
+
+4. **Notable threshold changes**:
+   - **NOR Grade 5 Level 2→3**: Changed from 56.5 to 57.5 starting 2016
+   - **NOR Grade 8 Level 1→2**: Changed from 36.5 to 37.5 starting 2016
+   - **NOR Grade 8 Level 2→3**: Was 44.5 in 2015, otherwise 43.5
+   - **MATH Grade 8 in 2014**: Used integer thresholds (37, 45, 55, 63)
+
+5. **Percentile alignment**: Actual thresholds generally align well with target percentiles
+
+# Interpretation
+
+## How to Use These Thresholds
+
+```
+For Grade 5 (3 levels):
+  Level 1: score < threshold_1
+  Level 2: threshold_1 <= score < threshold_2
+  Level 3: score >= threshold_2
+
+For Grade 8 (5 levels):
+  Level 1: score < threshold_1
+  Level 2: threshold_1 <= score < threshold_2
+  Level 3: threshold_2 <= score < threshold_3
+  Level 4: threshold_3 <= score < threshold_4
+  Level 5: score >= threshold_4
+```
+
+## Comparison to Published Udir Thresholds
+
+The published Udir thresholds are integers (e.g., 43, 57). The empirical
+thresholds are typically 0.5 below the published values (e.g., 42.5, 56.5).
+This is because Udir rounds up for communication, while actual classification
+uses the precise decimal cutpoint.
+
