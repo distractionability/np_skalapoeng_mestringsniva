@@ -21,3 +21,6 @@ archive/
 
 # Code review working files
 temp_codereview/
+
+# R interactive output
+Rplots.pdf
